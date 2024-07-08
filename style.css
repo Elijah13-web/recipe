@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/*mobile Devices-phone*/
+@media( width:375px){
+}
+
+/*custom color*/
+:root{
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --White: hsl(0, 0%, 100%);
+--RoseWhite: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--LightGrey: hsl(30, 18%, 87%);
+--WengeBrown: hsl(30, 10%, 34%);
+--DarkCharcoal: hsl(24, 5%, 18%);
+/*--Body-bg: hs1(29, 53, 90%);*/
+
+}
+body{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Young serif";
+}
+
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+    main{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.image-container{
+    width:100% ;
+    height: 40%;
+    border-radius: 15px;
+}
+.image-container img{
+    border-radius: 15px;
+}
+h1{
+    font-size:2.2rem;
+}
+.para1{
+    font-size: 1.3rem;
+    color: var(--WengeBrown);
+}
+
+/*preparation*/
+.preparation{
+    background-color: var(--RoseWhite);
+    padding: 15px; ;
+    margin: 2rem 0;
+    font-family:"outfit";
+    font-weight: 600;
+}
+
+.preparation h3{
+    color: var(--DarkRaspberry);
+    font-size: 2rem;
+}
+
+.prep-item{
+    /* background-color:red ;*/
+    padding: 10px 0;
+    list-style:disc;
+    color:var(--WengeBrown);
+}
+.prep-item::marker{
+    color:var(--DarkRaspberry);
+}
+.prep-item b{
+    padding-left: 1rem;
+}
+
+/*Ingredients*/
+.ingredient .Instruction{
+    border-bottom: 1px solid var(--DarkCharcoal);
+    margin: 10px 0;
+}
+ h2{
+    color: var(--Nutmeg);
+    font-family: young serif;
+    font-size: 2,5rem;
+    margin: 10px 0;
+}
+.ingr-item .{
+    padding: 10px 0;
+    list-style: disc;
+    color: var(--WengeBrown);
+}
+.ingr-item span{
+    padding-left: 1rem;
+    font-family: outfit;
+    font-size: 1.5rem;
+}
+
+/*Media query*/
+@media(max-width:768px){
+    .image-container{
+        width: 100%;
+        height: 200%;
+    }
+        main{
+            max-width: 100%;
+            margin: 0 auto;
+           padding: 0;
+        }
+        
+        .image-container{
+            width:100% ;
+            height: 40%;
+            border-radius: 15px;
+    }
+    .main-inner{
+        padding:0 15px;
+    }
+    h1{
+font-size: 2.5rem;
+    }
+}
+/*Instruction*/
+.Instruction{
+    margin: 2rem;
+}
+.inst-item{
+    padding:10px 0;
+    color:var(--WengeBrown);
+}
+.inst-item{
+    padding:0 1rem
+    color: var(--WengeBrown);
+}
+/*Nutrion*/
+table, tr, tr{
+    max-width: 400%;
+    padding: 10px 0;
+}
+tr{
+    border-bottom: 1px solid var(--WengeBrown);
+}
+
