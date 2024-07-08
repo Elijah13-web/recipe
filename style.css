@@ -26,26 +26,26 @@ body{
 
 a, li{
     text-decoration: none;
-    list-style: none;
+    /*list-style: none;*/
 }
     main{
     max-width: 80%;
-    margin: 0 auto;
+    margin: 4rem auto;
     background-color: var(--White);
     padding: 25px;
     border-radius: 15px;
 }
 
 .image-container{
-    width:100% ;
-    height: 40%;
+    width:100%;
+    height: 400px;
     border-radius: 15px;
 }
 .image-container img{
     border-radius: 15px;
 }
 h1{
-    font-size:2.2rem;
+    font-size:3.2rem;
 }
 .para1{
     font-size: 1.3rem;
@@ -55,7 +55,7 @@ h1{
 /*preparation*/
 .preparation{
     background-color: var(--RoseWhite);
-    padding: 15px; ;
+    padding: 15px; 
     margin: 2rem 0;
     font-family:"outfit";
     font-weight: 600;
@@ -87,15 +87,15 @@ h1{
  h2{
     color: var(--Nutmeg);
     font-family: young serif;
-    font-size: 2,5rem;
+    font-size: 2.5rem;
     margin: 10px 0;
 }
-.ingr-item .{
+.ingr-item {
     padding: 10px 0;
     list-style: disc;
     color: var(--WengeBrown);
 }
-.ingr-item span{
+.ingr-item span, .inst-item b{
     padding-left: 1rem;
     font-family: outfit;
     font-size: 1.5rem;
@@ -109,20 +109,19 @@ h1{
     }
         main{
             max-width: 100%;
-            margin: 0 auto;
            padding: 0;
         }
-        
-        .image-container{
-            width:100% ;
-            height: 40%;
-            border-radius: 15px;
-    }
     .main-inner{
         padding:0 15px;
     }
     h1{
-font-size: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .ingr-item span{
+        font-size: 1.2rem;
+    }
+    table,tr,td{
+        max-width: 100%;
     }
 }
 /*Instruction*/
@@ -134,15 +133,22 @@ font-size: 2.5rem;
     color:var(--WengeBrown);
 }
 .inst-item{
-    padding:0 1rem
+    padding:0 1rem;
     color: var(--WengeBrown);
 }
 /*Nutrion*/
-table, tr, tr{
+table, tr, td{
     max-width: 400%;
     padding: 10px 0;
 }
-tr{
-    border-bottom: 1px solid var(--WengeBrown);
+tr,td{
+    border-bottom: 1px solid var(--LightGrey);
+    border:collapse;
+}
+td:first-child{
+    color: var(--WengeBrown);
+}
+td:last-child{
+    color: var(--Nutmeg);
 }
 
